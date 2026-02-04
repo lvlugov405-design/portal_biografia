@@ -5,17 +5,29 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <link rel="stylesheet" href="style.css">
     <title>Biografia</title>
 
 </head>
 <body>
     <h1>LISETH VALENTINA LUGO<h1>
-    <Div>
-        Aqui va la foto
-    <div>
-        Aqui va el mapa
-    <div>
-        Aqui va el mapa
-    <div>
+  <div class="contenedor fila1">
+    <div class="descripcion">
+      <p>Ingeniera topográfica de la universidad distrital Francisco José de Caldas</p>
+    </div>
+    <img src="file.jpg" alt="Foto de Liseth" class="foto">
+  </div>
+
+  <div class="contenedor fila2">
+    <div id="map"></div>
+    <div class="texto-entrada">
+      <textarea placeholder="Escribe algo aquí..." rows="10"></textarea>
+    </div>
+  </div>
+
+  <script src="program.js"></script>
 </body>
-</html>
